@@ -7,3 +7,5 @@ pycryptodome
 boto3
 redis
 retry
+Flask
+Werkzeug
