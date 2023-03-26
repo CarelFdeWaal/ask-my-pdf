@@ -7,8 +7,10 @@ services:
       - .:/code
     ports:
       - "8501:8501"
+      - "5000:5000"
     working_dir: /code/src
-    command: streamlit run gui.py --server.port=8501 --logger.level=debug #sh run.sh 
+    #command: streamlit run gui.py --server.port=8501 --logger.level=debug #sh run.sh 
+    command: python api.py
     depends_on:
       - redis
     env_file:
